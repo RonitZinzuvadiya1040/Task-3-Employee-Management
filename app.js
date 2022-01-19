@@ -30,7 +30,7 @@ document.getElementById('CheckIn').addEventListener('click', (event) => {
 document.getElementById('CheckOut').addEventListener('click', (event) => {
     event.preventDefault();
     document.getElementById('CheckIn').disabled = false;
-    document.getElementById('ChekOut').disabled = true;
+    document.getElementById('CheckOut').disabled = true;
 
 
     day1 = new Date();
