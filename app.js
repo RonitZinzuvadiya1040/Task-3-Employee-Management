@@ -41,7 +41,7 @@ document.getElementById('CheckOut').addEventListener('click', (event) => {
     var CheckInTime = (day.getTime() / 1000).toFixed(0);
     var CheckOutTime = (day1.getTime() / 1000).toFixed(0);
 
-    var inHours = Math.floor(((CheckOutTime - CheckInTime) / 3600) % 24);
+    var inHours = Math.floor(((CheckOutTime - CheckInTime) / 3600) % 12);
     var inMinuts = Math.floor((((CheckOutTime - CheckInTime) / 60) % 60));
 
     inHours = inHours < 10 ? '0' + inHours : inHours;
@@ -73,6 +73,7 @@ document.getElementById('totalTime').addEventListener('click', (event) => {
 
 
 });
+
 document.getElementById('totalBreak').addEventListener('click', (event) => {
     event.preventDefault();
 
