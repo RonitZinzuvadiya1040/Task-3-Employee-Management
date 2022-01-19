@@ -2,12 +2,12 @@ var CheckIn;
 var CheckOut;
 var day;
 var day1, calculateInTime = 0, calculateBreakTime = 0;
-document.getElementById('chekOut').disabled = true;
+document.getElementById('CheckOut').disabled = true;
 
 document.getElementById('CheckIn').addEventListener('click', (event) => {
     event.preventDefault();
     document.getElementById('CheckIn').disabled = true;
-    document.getElementById('chekOut').disabled = false;
+    document.getElementById('CheckOut').disabled = false;
 
     day = new Date();
     CheckIn = day.getHours() + ":" + day.getMinutes();
@@ -27,10 +27,10 @@ document.getElementById('CheckIn').addEventListener('click', (event) => {
 });
 
 
-document.getElementById('chekOut').addEventListener('click', (event) => {
+document.getElementById('CheckOut').addEventListener('click', (event) => {
     event.preventDefault();
     document.getElementById('CheckIn').disabled = false;
-    document.getElementById('chekOut').disabled = true;
+    document.getElementById('ChekOut').disabled = true;
 
 
     day1 = new Date();
